@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of Objects in Javascript</title>
+</head>
+<body>
+    
+    <script>
+        var myObject = {
+            tony: {
+                name: "Tony", 
+                age: 35, 
+                gender: "Male"
+            }, 
+            eva: {
+                name: "Eva", 
+                age: 26, 
+                gender: "Female", 
+            }
+
+        };
+
+        console.log("Extracting Info 1: " + myObject.tony.name);
+
+        console.log("Extracting Info 2: " + myObject.eva["age"]);
+
+        delete myObject.eva;
+
+        for (var key in myObject){
+            console.log(myObject[key]);
+            
+        }
+    </script>
+</body>
+</html>

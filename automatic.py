@@ -7,7 +7,7 @@ import threading
 import socket #ip
 import os,sys
 car = AlphaBot()
-ghub = Github("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")
+ghub = Github("access token ")
 
 @get("/automatic")
 def index():
